@@ -1,18 +1,11 @@
 {
   "name": "Hide Screen Sharing",
   "description": "Hide Screen Sharing. Useful for software KVMs that always show screen sharing like Desk Flow, Input-Leap, Barrier, etc...",
-  "donations": {
-    "buymeacoffee": "tyvsmith",
-    "kofi": "tyvsmith",
-    "paypal": "tyvsmith",
-    "github": "tyvsmith"
-  },
   "shell-version": [
-    "46",
-    "47",
-    "48"
+    "40",
+    "42"
   ],
-  "url": "https://github.com/tyvsmith/hide-screen-sharing",
-  "uuid": "hide-screen-sharing@tysmith.me",
+  "url": "https://github.com/John-Bush14/hide-screen-sharing-pre-42",
+  "uuid": "hide-screen-sharing@johnbush.me",
   "version": 1
 }
