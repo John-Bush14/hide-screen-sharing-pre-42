@@ -1,14 +1,17 @@
-import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+const Main = imports.ui.main;
 
-import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+let indicator = null;
 
+function enable() {
+   indicator = Main.panel.statusArea["screenSharing"];
 
-export default class HideScreenSharingExtension extends Extension {
-    enable() {
-        Main.panel.statusArea.screenSharing.get_parent().hide()
-    }
+   if (indicator && indicator.container) {
+      indicator.container.hide();
+   }
+}
 
-    disable() {
-        Main.panel.statusArea.screenSharing.get_parent().show()
-    }
+function disable() {
+   if (indicator && indicator.container) {
+      indicator.container.show();
+   }
 }
